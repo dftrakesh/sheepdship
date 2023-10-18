@@ -41,7 +41,6 @@ public class SpeedShipSdk {
 
     @SneakyThrows
     private <T> T convertBody(String body, Class<T> tClass) {
-        System.out.println("Output: " + body);
         return objectMapper.readValue(body, tClass);
     }
 

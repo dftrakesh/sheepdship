@@ -17,7 +17,6 @@ public class LtlAPI extends SpeedShipSdk {
     @SneakyThrows
     public SpeedShipLTLResponse shopFlow(SpeedShipLTLRequest request) {
         URI uri = baseUrl("shopFlow");
-        System.out.println(uri.toString());
         HttpRequest post = post(uri, request);
 
         return getRequestWrapped(post, SpeedShipLTLResponse.class);
