@@ -15,6 +15,7 @@ public class HandlingUnitList {
     public String packagingType;
     public Boolean isMixedClass;
     public Boolean isStackable;
+    public String packagingTypeName;
     public BilledDimension billedDimension;
     public List<ReferenceList> referenceList;
     public List<ShippedItemList> shippedItemList;
